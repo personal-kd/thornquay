@@ -66,7 +66,7 @@ nav.main .btn{padding:12px 18px;min-height:40px;font-size:12px;border-bottom:non
 .arch.a1{height:40%;animation-delay:.05s}
 .arch.a2{height:66%;animation-delay:.2s}
 .arch.a3{height:94%;background:var(--brass);animation-delay:.35s}
-.waterline{height:8px;background:var(--brass)}
+.waterline{height:8px;background:var(--brass);position:relative;z-index:1}
 @keyframes rise{from{transform:scaleY(.35)}to{transform:scaleY(1)}}
 @media (prefers-reduced-motion:reduce){.arch{animation:none}}
 /* desktop: hero + facts band fill the first screen exactly */
@@ -268,3 +268,14 @@ footer a:hover{text-decoration:underline;text-underline-offset:4px}
   .steps{grid-template-columns:minmax(0,1fr)}
   .card{padding:24px}
 }
+
+/* scroll motion (classes added by site.js; nothing is hidden without JS or with reduced motion) */
+.rv{opacity:0;transform:translateY(16px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+.rv.rv-rise{transform:translateY(56px);transition-duration:.9s}
+.rv.in{opacity:1;transform:none}
+.draw-line{position:relative;border-top-color:transparent!important}
+.draw-line::before{content:"";position:absolute;left:0;right:0;top:-2px;height:2px;background:var(--brass);transform:scaleX(0);transform-origin:left;transition:transform 1.1s cubic-bezier(.2,.7,.2,1) .2s}
+.draw-line.drawn::before{transform:none}
+.rule.draw{transform:scaleX(0);transform-origin:left;transition:transform 1.1s cubic-bezier(.2,.7,.2,1) .2s}
+.rule.draw.drawn{transform:none}
+.arches{will-change:transform}
