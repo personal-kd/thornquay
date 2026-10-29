@@ -35,7 +35,7 @@ Every page shares the same header and footer markup. If you move to a CMS or tem
 ## To do before launch
 
 1. **Contact form.** The contact page currently shows the email address with a copy button. Add a form (fields: name, email, phone, "I am a client / an advisor", what you want to fund, timeline, message, consent checkbox) that sends to **info@thornquay.ca**. Netlify Forms, Formspree or the host's native form handler all work. Success message: "Thanks. We will be in touch within one business day." Make sure info@thornquay.ca exists in Google Workspace.
-2. **Placeholders.** Phone number on the contact page shows `[Phone number]`.
+2. **Phone number.** Removed from the contact page by request; email only.
 3. **Legal review.** The disclaimer (footer), insurance-based financing copy, FAQ and the three insights articles must be reviewed by counsel before going live. Do not add claims about returns, approval, tax outcomes or regulation.
 4. **Analytics and cookies.** None included. If you add analytics, add a cookie notice that defaults to declining non-essential cookies.
 5. **Domain setup.** Point thornquay.ca and www to the host, force HTTPS, redirect www to the apex (or the reverse, pick one). Canonical tags already use `https://thornquay.ca/`.
