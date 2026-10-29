@@ -131,10 +131,11 @@ nav.main .btn{padding:12px 18px;min-height:40px;font-size:12px;border-bottom:non
 .card dt{font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--brass-text);margin-bottom:4px}
 .card dd{margin:0;font-size:16px;line-height:1.55}
 .copy-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
-.copy-btn{background:none;border:1px solid var(--line);border-radius:2px;padding:0;width:36px;height:36px;display:inline-flex;align-items:center;justify-content:center;color:var(--ink);cursor:pointer}
+.copy-btn{background:none;border:1px solid var(--line);border-radius:2px;padding:0;width:30px;height:30px;margin-block:-3px;display:inline-flex;align-items:center;justify-content:center;color:var(--ink);cursor:pointer}
 .copy-btn svg{display:block}
 .copy-btn:hover{border-color:var(--ink)}
-.status{font-size:13px;color:var(--brass-text);min-height:20px}
+.status{font-size:13px;color:var(--brass-text)}
+.status:not(:empty){margin-top:6px}
 
 /* footer */
 footer.site{background:var(--quay);color:var(--on-quay-muted);padding-block:72px 40px;font-size:14px}
