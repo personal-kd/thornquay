@@ -69,6 +69,16 @@ nav.main .btn{padding:12px 18px;min-height:40px;font-size:12px;border-bottom:non
 .waterline{height:8px;background:var(--brass)}
 @keyframes rise{from{transform:scaleY(.35)}to{transform:scaleY(1)}}
 @media (prefers-reduced-motion:reduce){.arch{animation:none}}
+/* desktop: hero + facts band fill the first screen exactly */
+@media (min-width:961px) and (min-height:560px){
+  .hero-screen{display:flex;flex-direction:column;min-height:calc(100vh - var(--head-h,77px));min-height:calc(100svh - var(--head-h,77px))}
+  .hero-screen .hero{flex:1 0 auto;display:flex;flex-direction:column;padding-top:clamp(20px,4vh,56px)}
+  .hero-screen .hero-grid{flex:1 0 auto;width:100%}
+  .hero-screen .hero h1{font-size:clamp(46px,min(7vw,10vh),92px)}
+  .hero-screen .hero .stack{align-self:center;gap:clamp(16px,3vh,28px);padding-block:clamp(16px,4vh,56px)}
+  .hero-screen .arches{height:clamp(220px,52vh,540px)}
+  .hero-screen .fact{padding-block:clamp(18px,3vh,28px)}
+}
 
 /* intro */
 .split{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:64px;align-items:start}
