@@ -47,4 +47,4 @@ Every page shares the same header and footer markup. If you move to a CMS or tem
 - No em dashes in copy.
 - No names, client details or bios on the site.
 - Keep the footer disclaimer on every page, including "Thornquay is not a bank."
-- Thornquay Financial Corp. · Ontario Corporation No. 1001794659 · 133 Richmond Street West, Suite 207, Toronto, Ontario M5H 2L3.
+- Thornquay Financial Corp. · 133 Richmond Street West, Suite 207, Toronto, Ontario M5H 2L3. (Ontario Corporation No. 1001794659 removed from the footer by request.)
